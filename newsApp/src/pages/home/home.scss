@@ -1,0 +1,63 @@
+page-home {
+
+    .toolbar{
+        .toolbar-background{
+            background: green;
+            
+        }
+        
+         .toolbar-title-md{
+            color: white;
+        }
+    }
+    
+    .content-md{
+        margin-top: -20px;
+    }
+
+
+    ion-card{
+        width: 100%;
+        
+    }
+    ion-col{
+        margin: -10px;
+    }
+
+    .card-md{
+        margin-bottom: -10px;
+        border-radius: 5px;
+        
+    }
+    .imgN{
+        float: left;
+        width: 100%;
+        height: 140px ;
+        margin: -20px 20px -5px -20px;
+    }
+
+    a {
+        margin-top: -15px;
+        float: left;
+        font-weight: bold;
+        font-size: 12px;
+        text-align: justify; 
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        color: gray;
+    }
+    .bottom{
+        margin-bottom: -20px;
+        margin-top: -15px;
+        font-size: x-small;
+        color: gray;
+    }
+    .mid{
+        margin-bottom: 10px;
+        font-size: x-small;
+        color: gray;
+    }
+   
+}

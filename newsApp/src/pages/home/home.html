@@ -1,0 +1,28 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>NewsApp</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-row>
+  <ion-col class="ion-card" col-12 *ngFor="let item of response">
+    <ion-card>
+      <ion-card-content >
+        <img *ngIf="item.urlToImage==''"  src="../assets/imgs/noimage.png" col-5 alt="" class="imgN" >
+        <img *ngIf="item.urlToImage!=''"src="{{item.urlToImage}}" col-5 alt="" class="imgN" >
+         <p class="title2"  > <a href="{{item.url}}" col-7>{{item.title}}</a> </p> 
+        <p col-10 class="mid"> {{item.publishedAt}} </p>
+        <p col-10 class="bottom"> {{item.source.name}} </p>
+        
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+</ion-row>
+</ion-content>
